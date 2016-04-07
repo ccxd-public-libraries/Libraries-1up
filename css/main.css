@@ -1,0 +1,380 @@
+@import "fonts.css";
+body {
+  background: #f5f5f5;
+  margin: 0 auto;
+  font-family: 'Adobe Clean', sans-serif;
+  font-weight: 200;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  -webkit-padding-start: 0px;
+}
+header {
+  width: 100vw;
+  background: #fff;
+  position: fixed;
+  z-index: 1000;
+}
+header .main-nav {
+  height: 50px;
+  width: 100vw;
+  background: #000;
+  color: #fff;
+}
+header .main-nav img {
+  height: 24px;
+}
+header .user {
+  margin: 15px;
+  float: right;
+}
+header .author {
+  float: left;
+  text-align: left;
+  margin: 15px;
+  font-size: 10px;
+}
+header .sub-nav {
+  height: 50px;
+  background: #fff;
+  margin: 0;
+}
+header .sub-nav img {
+  height: 24px;
+}
+header .sub-nav .sub-nav-hide {
+  display: none;
+}
+header .sub-nav .reveal {
+  display: block;
+}
+header .sub-nav .subscribe-btn {
+  color: #fff;
+  background: #1473e6;
+  font-size: 15px;
+  padding: 5px 14px;
+  border-radius: 16px;
+  margin: 9px;
+  transition: all 0.5s ease;
+}
+header .sub-nav .subscribe-btn:hover {
+  color: #fff;
+  background: #0f64d2;
+}
+header .sub-nav a {
+  margin: 15px;
+  float: right;
+  color: #000;
+}
+header .logo {
+  float: left;
+  display: inline-flex;
+  padding-top: 15px;
+}
+header .logo img {
+  height: 40px;
+  margin-top: -10px;
+}
+.container {
+  padding-top: 58px;
+}
+.container .cover {
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+.container .cover img {
+  max-height: 110px;
+  max-width: 110px;
+  margin-right: 20px;
+}
+.container .cover h1 {
+  font-weight: 200;
+  padding-top: 50px;
+}
+.container .cover .description {
+  max-width: 400px;
+  font-weight: 200;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container .cover .tooltip {
+  display: inline;
+  position: relative;
+}
+.container .cover .tooltip:hover:after {
+  background: #999;
+  color: #fff;
+  content: attr(title);
+  z-index: 98;
+  position: absolute;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  width: 180px;
+  line-height: 16px;
+  left: 110%;
+}
+.container .cover .subscribe-btn {
+  color: #fff;
+  background: #1473e6;
+  font-size: 15px;
+  padding: 5px 14px;
+  border-radius: 16px;
+  margin: 20px;
+  transition: all 0.5s ease;
+}
+.container .cover .subscribe-btn::after {
+  content: "Follow";
+}
+.container .cover .subscribe-btn:hover {
+  color: #fff;
+  background: #0f64d2;
+}
+.container .cover .subscribe-btn:hover::before {
+  content: "Follow";
+}
+.container .cover .subscribed {
+  color: #1473e6;
+  background: transparent;
+  border: 2px solid #1473e6;
+  transition: all 0.5s ease;
+}
+.container .cover .subscribed::after {
+  content: "Following";
+}
+.container .cover .subscribed:hover {
+  color: #1473e6;
+  background: transparent;
+  border: 2px solid #1473e6;
+  transition: all 0.5s ease;
+}
+.container .cover .subscribed:hover::before {
+  content: "Following";
+  transition: all 0.5s ease;
+}
+.container .cover .down-arrow {
+  display: none;
+}
+.container .sidenav {
+  width: 15vw;
+  text-align: right;
+  margin: 0;
+  margin-right: 5vw;
+  position: absolute;
+  z-index: 1000;
+  color: #808080;
+}
+.container .sidenav li {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.container .sidenav li a {
+  padding-right: 15px;
+  color: #404040;
+}
+.container .sidenav .active {
+  color: #000;
+  border-right: medium solid #000;
+  transition: all 150ms ease-in-out;
+}
+.oneup {
+  width: 30%;
+  margin: auto;
+}
+.oneup .asset {
+  margin-top: 110px;
+}
+.oneup .asset h3 {
+  line-height: 0;
+}
+.oneup .asset p {
+  font-size: 14px;
+  line-height: 0.4;
+  color: #707070;
+}
+.content {
+  width: 65vw;
+  margin: 0 auto;
+  margin-left: 20vw;
+}
+.content ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0px;
+}
+.content ul li {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+  list-style: none;
+}
+.content .overflow-content {
+  display: none;
+}
+.content h4 {
+  text-align: left;
+  font-weight: 400;
+  color: #404040;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+.content .colors ul li {
+  width: 85px;
+  height: 85px;
+}
+.content .colors ul li:hover {
+  background-image: url("../images/hover-color.png");
+}
+.content .more {
+  display: none;
+  margin-top: -15px;
+}
+.content a.showLink,
+.content a.hideLink {
+  color: #404040;
+  font-weight: 400;
+  margin-top: -20px;
+  font-size: 14px;
+}
+.content .themes ul li {
+  width: 190px;
+  height: 85px;
+}
+.content .themes ul li:hover {
+  background-image: url("../images/hover-theme.png");
+}
+.content .character-styles ul li {
+  width: 190px;
+  height: 190px;
+  background-image: url("../images/char-style.png");
+}
+.content .character-styles ul .char-style-2 {
+  background-image: url("../images/char-style-2.png");
+}
+.content .character-styles ul .char-style-3 {
+  background-image: url("../images/char-style-3.png");
+}
+.content .character-styles ul .char-style-4 {
+  background-image: url("../images/char-style-4.png");
+}
+.content .layer-styles ul li {
+  width: 190px;
+  height: 190px;
+  background-image: url("../images/layer-style.png");
+}
+.content .layer-styles ul li:hover {
+  background-image: url("../images/hover-layer-style.png");
+}
+.content .layer-styles ul .layer-style-2 {
+  background-image: url("../images/layer-style-2.png");
+}
+.content .layer-styles ul .layer-style-3 {
+  background-image: url("../images/layer-style-3.png");
+}
+.content .brushes ul li img {
+  width: 190px;
+}
+.content .patterns ul li {
+  width: 190px;
+  height: 60px;
+}
+.content .content-masonry .grid-item {
+  width: 190px;
+  margin-bottom: 20px;
+  z-index: -1;
+}
+.content .video ul li {
+  width: 190px;
+  height: 95px;
+  background-image: url("../images/video.jpeg");
+}
+.content .threed ul li img {
+  width: 190px;
+}
+.content .looks ul li img {
+  width: 190px;
+}
+.howitworks {
+  background-color: #fff;
+  width: 100vw;
+  padding: 40px 0px;
+  margin-top: 100px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #707070;
+}
+.howitworks .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.howitworks img {
+  max-width: 500px;
+}
+.howitworks .explain-text {
+  width: 12vw;
+  margin-left: 7vw;
+}
+footer {
+  background-color: #2d2d2d;
+  color: #fff;
+  height: 60px;
+  width: 100vw;
+  border-top: 1px solid #fff;
+  left: 0;
+  bottom: 0;
+}
+footer a {
+  color: #fff;
+  font-size: 14px;
+  margin: 10px;
+  margin-top: 100px;
+}
+footer a:first-child {
+  margin-left: 50px;
+}
+@media only screen and (max-width: 768px) {
+  .sidenav {
+    display: none;
+  }
+  .container .cover h1 {
+    font-size: 3em;
+    padding-top: 190px;
+  }
+  .container .cover .description {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .container .cover .subscribe-btn {
+    margin-bottom: 50px;
+  }
+  .container .cover .down-arrow {
+    display: block;
+    max-width: 50px;
+    margin: 0 auto;
+    padding: 175px 0px 100px 0px;
+  }
+  .container .content {
+    width: 83vw;
+    margin-left: 10vw;
+  }
+  .container .content ul li img {
+    max-width: 104px;
+  }
+  .container .content .colors ul li {
+    width: 104px;
+    height: 104px;
+  }
+  .container .content .themes li {
+    max-width: 104px;
+  }
+}

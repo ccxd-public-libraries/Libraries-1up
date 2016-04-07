@@ -1,0 +1,343 @@
+@import "fonts.css"
+
+body
+  background #F5F5F5
+  margin 0 auto
+  font-family 'Adobe Clean', sans-serif
+  font-weight 200
+
+a
+  text-decoration none
+
+ul
+  -webkit-padding-start 0px
+
+header
+  width 100vw
+  background white
+  position fixed
+  z-index 1000
+  .main-nav
+    height 50px
+    width 100vw
+    background black
+    color white
+    img
+      height 24px
+  .user
+    margin 15px
+    float right
+  .author
+    float left
+    text-align left
+    margin 15px
+    font-size 10px
+  .sub-nav
+    height 50px
+    background white
+    margin 0
+    img
+      height 24px
+    .sub-nav-hide
+      display none
+    .reveal
+      display block
+    .subscribe-btn
+      color white
+      background #1473E6
+      font-size 15px
+      padding 5px 14px
+      border-radius 16px
+      margin 9px
+      transition all 0.5s ease
+      &:hover
+        color white
+        background #0f64d2
+
+    a
+      margin 15px
+      float right
+      color black
+
+  .logo
+    float left
+    display inline-flex
+    padding-top 15px
+    img
+      height 40px
+      margin-top -10px
+
+.container
+  padding-top 58px
+  .cover
+    text-align center
+    background-color white
+    padding-bottom 50px
+    margin-bottom 50px
+    img
+      max-height 110px
+      max-width 110px
+      margin-right 20px
+    h1
+      font-weight 200
+      padding-top 50px
+    .description
+      max-width 400px
+      font-weight 200
+      margin 0 auto
+      margin-top 20px
+      margin-bottom 20px
+    .tooltip
+      display inline
+      position relative
+      &:hover:after
+        background #999999
+        color white
+        content attr(title)
+        z-index 98
+        position absolute
+        font-size 11px
+        padding 4px 8px
+        border-radius 4px
+        width 180px
+        line-height 16px
+        left 110%
+    .subscribe-btn
+      &::after
+        content "Follow"
+      color white
+      background #1473E6
+      font-size 15px
+      padding 5px 14px
+      border-radius 16px
+      margin 20px
+      transition all 0.5s ease
+      &:hover
+        color white
+        background #0f64d2
+        &::before
+          content "Follow"
+    .subscribed
+      color #1473e6
+      background transparent
+      border 2px solid #1473e6
+      transition all 0.5s ease
+      &::after
+        content "Following"
+      &:hover
+        color #1473e6
+        background transparent
+        border 2px solid #1473e6
+        transition all 0.5s ease
+        &::before
+          content "Following"
+          transition all 0.5s ease
+
+    .down-arrow
+      display none
+  .sidenav
+    width 15vw
+    text-align right
+    margin 0
+    margin-right 5vw
+    position absolute
+    z-index 1000
+    color gray
+    li
+      list-style-type none
+      text-transform uppercase
+      font-size 13px
+      margin-bottom 10px
+      a
+        padding-right 15px
+        color #404040
+    .active
+      color black
+      border-right medium solid #000000
+      transition all 150ms ease-in-out
+.oneup
+  width 30%
+  margin auto
+  .asset
+    margin-top 110px
+    h3
+      line-height 0
+    p
+      font-size 14px
+      line-height 0.4
+      color #707070
+
+.content
+  width 65vw
+  margin 0 auto
+  margin-left 20vw
+  ul
+    display flex
+    flex-wrap wrap
+    margin-bottom 0px
+    li
+      margin-right 20px
+      margin-bottom 20px
+      padding 0
+      list-style none
+
+  .overflow-content
+    display none
+  h4
+    text-align left
+    font-weight 400
+    color #404040
+    margin-top 50px
+    text-transform uppercase
+  .colors
+    ul
+      li
+        width 85px
+        height 85px
+        &:hover
+          background-image url('../images/hover-color.png')
+
+  .more
+    display none
+    margin-top: -15px
+  a.showLink, a.hideLink
+    color #404040
+    font-weight 400
+    margin-top -20px
+    font-size 14px
+
+  .themes
+    ul
+      li
+        width 190px
+        height 85px
+        &:hover
+          background-image url('../images/hover-theme.png')
+
+  .character-styles
+    ul
+      li
+        width 190px
+        height 190px
+        background-image url('../images/char-style.png')
+      .char-style-2
+        background-image url('../images/char-style-2.png')
+      .char-style-3
+        background-image url('../images/char-style-3.png')
+      .char-style-4
+        background-image url('../images/char-style-4.png')
+
+  .layer-styles
+    ul
+      li
+        width 190px
+        height 190px
+        background-image url('../images/layer-style.png')
+        &:hover
+          background-image url('../images/hover-layer-style.png')
+      .layer-style-2
+        background-image url('../images/layer-style-2.png')
+      .layer-style-3
+        background-image url('../images/layer-style-3.png')
+
+  .brushes
+    ul
+      li
+        img
+          width 190px
+  .patterns
+    ul
+      li
+        width 190px
+        height 60px
+  .content-masonry
+    .grid-item
+      width 190px
+      margin-bottom 20px
+      z-index -1
+  .video
+    ul
+      li
+        width 190px
+        height 95px
+        background-image url('../images/video.jpeg')
+  .threed
+    ul
+      li
+        img
+          width 190px
+  .looks
+    ul
+      li
+        img
+          width 190px
+
+.howitworks
+  background-color #ffffff
+  width 100vw
+  padding 40px 0px
+  margin-top 100px
+  text-align center
+  font-weight bold
+  line-height 1.5
+  color #707070
+  .flex
+    display flex
+    justify-content center
+    align-items center
+    margin-top 50px
+  img
+    max-width 500px
+  .explain-text
+    width 12vw
+    margin-left 7vw
+
+footer
+  background-color #2d2d2d
+  color white
+  height 60px
+  width 100vw
+  border-top 1px solid white
+  left 0
+  bottom 0
+  a
+    color white
+    font-size 14px
+    margin 10px
+    margin-top 100px
+    &:first-child
+      margin-left 50px
+
+@media only screen and (max-width: 768px)
+  .sidenav
+    display none
+  .container
+    .cover
+      h1
+        font-size 3em
+        padding-top 190px
+      .description
+        margin-top 40px
+        margin-bottom 30px
+      .subscribe-btn
+        margin-bottom 50px
+      .down-arrow
+        display block
+        max-width 50px
+        margin 0 auto
+        padding 175px 0px 100px 0px
+
+    .content
+      width 83vw
+      margin-left 10vw
+      ul
+        li
+          img
+            max-width 104px
+      .colors
+        ul
+          li
+            width 104px
+            height 104px
+      .themes li
+        max-width 104px
